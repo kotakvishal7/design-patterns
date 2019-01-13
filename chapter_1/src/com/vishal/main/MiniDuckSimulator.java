@@ -1,5 +1,7 @@
 package com.vishal.main;
 
+import com.vishal.fly.FlyRocketPowered;
+
 public class MiniDuckSimulator {
 
 	public static void main(String args[]) {
@@ -14,5 +16,19 @@ public class MiniDuckSimulator {
 		// This calls the Duck's performQuack() method and references the Quack class
 		// through the quackBehavior interface. 
 		mallardDuck.performQuack();
+		
+		Duck modelDuck = new ModelDuck();
+		
+		// This performFly method will execute the fly method of the FlyNoWay behavior
+		// of flyBehavior as it was assigned during the instantiation.
+		modelDuck.performFly();
+		
+		// This invokes the model's inherited setter method and the duck suddenly has
+		// rocket-powered flying capability.
+		modelDuck.setFlyBehavior(new FlyRocketPowered());
+		
+		
+		// Now the duck has rocket-powered flying behavior
+		modelDuck.performFly();
 	}
 }

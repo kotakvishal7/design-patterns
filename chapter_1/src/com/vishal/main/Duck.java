@@ -31,4 +31,17 @@ public abstract class Duck {
 		System.out.println("All ducks float, even decoys.");
 	}
 	
+	// The below two methods are added to assign types to flyBehavior and 
+	// quackBehavior at runt time. Currently they are being instantiated 
+	// in the constructor forcing them to use implementations instead of
+	// interfaces.
+	
+	public void setFlyBehavior(FlyBehavior flyBehavior) {
+		this.flyBehavior = flyBehavior;
+	}
+	
+	public void setQuackBehavior(QuackBehavior quackBehavior) {
+		this.quackBehavior = quackBehavior;
+	}
+	
 }
