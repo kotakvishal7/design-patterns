@@ -1,4 +1,8 @@
-package com.vishal.main;
+package com.vishal.strategypattern;
+
+// The strategy pattern defines a set of algorithms, encapsulates it 
+// and makes them completely interchangable. Strategy pattern lets 
+// the algorithms vary indendently from the client that use it.
 
 import com.vishal.fly.FlyBehavior;
 import com.vishal.quack.QuackBehavior;

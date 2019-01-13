@@ -1,4 +1,4 @@
-package com.vishal.main;
+package com.vishal.strategypattern;
 
 import com.vishal.fly.FlyNoWay;
 import com.vishal.quack.Quack;
